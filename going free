@@ -3,7 +3,11 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mappl
 
 local Window = Library:Create("Free GOINGHUB","discord")
 
-local Tab1 = Window:Tab("fly",true)
+local Tab1 = Window:Tab("scripts",true)
+
+Tab1:Button("Silent Aim and Aim Lock hold e to aim lock doe",function(bool)
+ loadstring(game:HttpGet("https://pastebin.com/raw/PdMRHkY7" ))() 
+end)
 
 Tab1:Button("FLY (X)",function(bool)
     loadstring(game:HttpGet("https://pastebin.com/raw/sUA9m6M6"))()
@@ -89,8 +93,11 @@ end
 
 game:GetService("UserInputService").InputBegan:connect(TrashTalk)
 end)
-local Tab4 = Window:Tab("anti",true)
+local Tab4 = Window:Tab("anti and fov",true)
 
+Tab4:Slider("Fov Camera",80,200,function(text)
+    workspace.CurrentCamera.FieldOfView = (text)
+end)
 
 Tab4:Button("Antilock Improved (Z)",function(bool)
     local userInput = game:service('UserInputService')
@@ -166,6 +173,9 @@ end)
 
 local Tab6 = Window:Tab("speed glitch ",true)
 
+Tab6:Button("speed (z)",function(bool)
+loadstring(game:HttpGet("https://pastebin.com/raw/Wf16wRBc"))()
+end)
 
 Tab6:Button("Realistic Speed Glitch (q)",function(bool)
     local Player = game:GetService("Players").LocalPlayer
